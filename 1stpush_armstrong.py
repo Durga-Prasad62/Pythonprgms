@@ -19,13 +19,14 @@
 
 #using count method 
 def Armstrong_num(num):
-     updated=num  
      arm=0
      length=len(str(num))
      count=0
      while(num!=0):
+         num//=10
          count+=1
-         print("count",count)
+     print("count",count)
+     updated=num
      while(num!=0):
         rem=num%10
         arm=arm+rem*count
