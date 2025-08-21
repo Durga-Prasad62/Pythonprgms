@@ -142,7 +142,7 @@ print(list6)
 # [[1, 2]]
 
 #Reverse
-rev_list=[1,3,4,56,4,6,6]
-rev_list.reverse()
-print(rev_list)
+# rev_list=[1,3,4,56,4,6,6]
+# rev_list.reverse()
+# print(rev_list)
 # [6, 6, 4, 56, 4, 3, 1]
