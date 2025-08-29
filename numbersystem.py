@@ -40,6 +40,7 @@ perfect_number(6)
 perfect_number(24)
 perfect_number(28)
 
+
 #within the range
 def perfect_number(num):
     sum=0
@@ -53,6 +54,7 @@ end=int(input("enter ending number:"))
 for j in range(start,end):
     if perfect_number(j):
             print(j)
+
 
 
 
