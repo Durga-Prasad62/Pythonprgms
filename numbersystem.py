@@ -44,14 +44,13 @@ perfect_number(28)
 #within the range
 def perfect_number(num):
     sum=0
-    for i in range(1,num):
+    for i in range(1,num//2+1):
         if num%i==0:
             sum+=i
-    if sum==num:
-         print(sum)
+    return sum==num
 start=int(input("enter starting number:"))
 end=int(input("enter ending number:"))
-for j in range(start,end):
+for j in range(start,end+1):
     if perfect_number(j):
             print(j)
 
