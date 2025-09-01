@@ -9,13 +9,14 @@ class Calculator:
     def Mul(self,a,b):
         print(a*b)
     def Div(self,a,b):
-        print("division not possible")if b==0 else (b/a)
+        print("division not possible")if b==0 else (a/b)
     def expo(self,a,b):
         print(a**b)
     def floor(self,a,b):
-        print(a//b)
+         print(" floor division not possible")if b==0 else (a//b)
     def mod(self,a,b):
-        print(a%b)
+         print(" mod not possible")if b==0 else (a%b)
+     
     def display(self):
         print(self.model_no,self.made_in,self.color,self.discount)
     def display2(self):
