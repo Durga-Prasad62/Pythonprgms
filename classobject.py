@@ -42,6 +42,11 @@ cal2.color="blue"
 cal2.discount=10
 cal1.display()
 cal2.display2()
+#define self
+# In Python, self is a conventional name for the first parameter of instance methods within a class. 
+# It is not a reserved keyword, but its use is a widely adopted convention that significantly improves code readability and maintainability.
+# It allows methods to access and manipulate the attributes (variables) and other methods belonging to the specific instance of the class.
+
 
 
 
