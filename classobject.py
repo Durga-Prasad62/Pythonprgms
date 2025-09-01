@@ -1,8 +1,6 @@
 # Question 1:  Create your own class which can implement all arthematic operations. Create 2 objects for it and call above implemented methods. Add model_num, made_in variables to obj1. Add color and discount to obj2. print model_num, made_in, color, discount to both the object
 
 # Question 2:Define self
-
-
 class Calculator:
     def Add(self,a,b):
         print (a+b)
@@ -24,7 +22,6 @@ class Calculator:
         print(self.model_no,self.made_in,self.color,self.discount)
 cal1=Calculator()
 cal2=Calculator()
-
 cal1.Add(2,4)
 cal1.Sub(2,4)
 cal1.Mul(2,4)
