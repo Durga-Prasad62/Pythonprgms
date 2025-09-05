@@ -54,6 +54,6 @@ mob.storagemobile ="128GB"
 mob.storage()
 mob.newspace="328gb"
 print("\n--- Inherited Class ---""single")
-mob1=UpdateMobile("mi",15000,"China","40000mah","128gb")
+mob1=UpdateMobile("vivonew",15000,"China","40000mah","128gb")
 mob1.display()
 
