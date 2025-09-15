@@ -13,6 +13,15 @@ def Reverse (name):
 Reverse("HELLO")
 Reverse("WORLD")
 
+#using range
+def Reverse (name):
+    rev = ""
+    for i in range(len(name)-1,-1,-1):
+        rev+=name[i]
+    print(rev)
+Reverse("HELLO")
+Reverse("WORLD")
+
 def individual_sum (num):
     sum = 0
     while(num!=0):
