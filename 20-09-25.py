@@ -3,8 +3,8 @@ m = [[1,2,3],
     [7,8,9,10]]
 n = []
 sum = 0
-for i in range(len(m)):  #for indices
-    for j in m[i]:       # for items 
+for i in m:  #for indices
+    for j in i:       # for items 
         sum += j
 n.append(sum)
 print(n)
