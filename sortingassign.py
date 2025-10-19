@@ -24,38 +24,18 @@
 
 #bubble sort Can you sort nested lists based on the first element of each nested list.
 
-# def BubbleSort (arr):
-#     for i in range(len(arr)-1):
-#         for j in range(len(arr)-i-1):
-#             if  arr[j][0] > arr[j+1][0]:
-#                arr[j][0],arr[j+1][0] = arr[j+1][0],arr[j][0]
-#     print(arr)      
-# BubbleSort( [[1, 56,56], [90,79,98], [78,86,72], [6,13,42], [89,7,5]])
-
-
-
-def BubbleSort (arr):
+def BubbleSort(arr):
     for i in range(len(arr)-1):
-        for j in range(len(arr)-i-1):
-            if  arr[j][0] > arr[j+1][0]:
-                arr[j][0],arr[j+1][0] = arr[j+1][0],arr[j][0]
-            if arr[j][1] > arr[j+1][1]:
-               arr[j][1],arr[j+1][1] = arr[j+1][1],arr[j][1]
-            if arr[j][2] > arr[j+1][2]:
-               arr[j][2],arr[j+1][2] = arr[j+1][2],arr[j][2]
-    print(arr)      
-BubbleSort( [[1, 56,56], [90,79,98], [78,86,72], [6,13,42], [89,7,5]])
+        for j in range(len(arr)-1-i):
+            if arr[j][0] > arr[j+1][0]:
+                # Swap entire sublists
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    print(arr)
+
+# Test
+BubbleSort([[1,56,56],[90,79,98],[78,86,72],[6,13,42],[89,7,5]])
 
 
 
-
-# i have doubt how to take all elements in sorting
-def BubbleSort (arr):
-    for i in range(len(arr)-1):
-        for j in range(len(arr)-i-1):
-            if i>j and  arr[j][i] > arr[j+1][i]:
-               arr[j][i],arr[j+1][i] = arr[j+1][i],arr[j][i]
-    print(arr)      
-BubbleSort( [[1, 56,56], [90,79,98], [78,86,72], [6,13,42], [89,7,5]])
 
 
