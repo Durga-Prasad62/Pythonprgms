@@ -51,7 +51,7 @@
 #      arm=0
 #      count=0
 #      temp=i 
-#      while(i<0):
+#      while(temp>0):
 #         count+=1
 #         print("count",count)
 #      while(temp!=0):
