@@ -1,60 +1,62 @@
-# string Reverse
-# slicing
+# String Reverse
+
+# Using slicing
 str1 = "HELLO"
 str1 = str1[::-1]
-print(str1)
-#insert not in str
-#we cant do swapping in str because item reassignment is not possible so  way is we need to change to str to list swap will work
-def Reverse (name):
+print("Reversed using slicing:", str1)
+
+# Using iteration
+def reverse_string(name):
     rev = ""
-    for i in name:
-        rev=i+rev
-    print(rev)
-Reverse("HELLO")
-Reverse("WORLD")
+    for ch in name:
+        rev = ch + rev
+    return rev
 
-#using range
-def Reverse (name):
+print("Reversed using iteration:", reverse_string("HELLO"))
+print("Reversed using iteration:", reverse_string("WORLD"))
+
+# Using range
+def reverse_string_range(name):
     rev = ""
-    for i in range(len(name)-1,-1,-1):
-        rev+=name[i]
-    print(rev)
-Reverse("HELLO")
-Reverse("WORLD")
+    for i in range(len(name)-1, -1, -1):
+        rev += name[i]
+    return rev
 
-def individual_sum (num):
-    sum = 0
-    while(num!=0):
-        rem = num%10
-        sum += rem
-        num//=10    
-    return sum
-ls = [123,456,789,45,334,566]
-new_list = []
-for i in range(len(ls)):
-      new_list.append(individual_sum(ls[i]))
-print(new_list)
+print("Reversed using range:", reverse_string_range("HELLO"))
+print("Reversed using range:", reverse_string_range("WORLD"))
+print()
 
-#Find max digit in the given number
+
+# Sum of digits of each number in the list
+def sum_of_digits(num):
+    total = 0
+    while num != 0:
+        total += num % 10
+        num //= 10
+    return total
+
+numbers = [123, 456, 789, 45, 334, 566]
+sum_list = [sum_of_digits(n) for n in numbers]
+print("Sum of digits for each number:", sum_list)
+print()
+
+
+# Find max digit in a given number
 def max_digit(num):
-    max = 0
-    for i in str(num):
-        if int(i) > max:
-            max = int(i)
-    print("max=", max)
-max_digit(123689753)
-max_digit(12342246373)
-    
-#Find max digit for every number in the given list
-def individual_max(num):
-     max=0
-     for i in str(num):
-           if int(i) > max:
-            max = int(i)
-     return max        
-ls = [123,456,789,45,334,566]
-new_list = []
-for i in range(len(ls)):
-      new_list.append(individual_max(ls[i]))
-print(new_list)
- 
+    maximum = 0
+    for ch in str(num):
+        if int(ch) > maximum:
+            maximum = int(ch)
+    return maximum
+
+print("Max digit in numbers:")
+print(max_digit(123689753))
+print(max_digit(12342246373))
+print()
+
+
+# Find max digit for every number in a list
+def max_digit_list(lst):
+    return [max_digit(n) for n in lst]
+
+print("Max digit for each number in list:", max_digit_list(numbers))
