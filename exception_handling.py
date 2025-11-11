@@ -80,3 +80,11 @@ try:
 finally:
     print("User input handling complete.")
 
+
+class Car():
+    def car_name():
+        print("this is a innova car")
+    def car_color():
+        print("this is the black color")
+obj = Car()
+print(obj.car_engine)  # attribute error
